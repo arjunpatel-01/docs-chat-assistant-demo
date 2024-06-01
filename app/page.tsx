@@ -27,13 +27,15 @@ export default function Home() {
                   const match = /language-(\w+)/.exec(className || '');
                   return match ? (
                       <SyntaxHighlighter
-                          children={String(children).replace(/\n$/, '')}
+                          // children={String(children).replace(/\n$/, '')}
                           style={atomDark}
                           language={match[1]} 
                           PreTag="div"
                           wrapLines={true}
                           wrapLongLines={true}
-                      />
+                      >
+                        {String(children).replace(/\n$/, '')}
+                      </SyntaxHighlighter>
                   ) : (
                       <code 
                           style={{
