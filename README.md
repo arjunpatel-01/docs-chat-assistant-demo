@@ -1,1 +1,1 @@
-# This is a demo for Docs Chat Assistant. Visit the site here!
+# This is a demo for Docs Chat Assistant. Visit the site [here](https://docs-chat-assistant-demo.vercel.app/)!
